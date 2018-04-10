@@ -1,0 +1,26 @@
+Se debe hacer un rework del proyecto con POO.
+Se debe crear las siguientes clases con sus atributos y metodos:
+
+1) Clase "Vehiculo":
+	-Atributos privados:
+		-"Patente"
+		-"HoraIngreso"
+	-"Constructor()" que recibe los dos parametros.
+	-"Estacionar()" que devuelve true o false.
+	-"GetPatente()" que devuelve la patente del vehiculo.
+	-"Sacar()" que recibe patente y devuelve importe.
+	-"TraerTodo()" trae el listado de vehiculos estacionados.
+	-"GuardarTodo()" recibe un listado de vehiculos y los guarda. Devuelve true o false.
+		
+2) Clase "Facturado":
+	-Atributos privados:
+		-"Vehiculo"
+		-"HoraSalida"
+		-"Importe"
+	-Constructor que recibe un vehiculo y hora de salida.
+	-"TraerTodo()" devuelve un estado de facturado.
+	-"GuardarTodo()" recibe un listado de facturados, retorna true o false.
+	
+3) Clase UI tablas.
+	-"CrearTablaEstacionados()"
+	-"CrearTablaFacturados()"
