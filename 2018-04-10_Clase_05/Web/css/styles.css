@@ -1,0 +1,134 @@
+body
+{
+	height: 3000px;
+}
+
+#page
+{
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/body-background.jpg');
+	background-repeat: no-repeat;
+	background-color: black;
+}
+
+#main
+{
+	height: 100%;
+	margin: 0 10%;
+	background-color: rgba(0,0,0,0.3);
+	box-shadow: 15px -30px 55px aqua, -15px -30px 55px aqua;
+}
+
+div.row
+{
+	padding: 0;
+	margin: 0;
+}
+
+.title-container
+{
+	position: relative;
+	height: 100px;
+}
+
+.bg-dark-cbf
+{
+	background-color: rgba(52,58,64,0.3);
+}
+
+input.form-control
+{
+	background: transparent;
+    font-weight: bold;
+	transition: 0.2s;
+}
+
+input.form-control::placeholder
+{
+	transition: 0.2s;
+}
+
+input.form-control:hover
+{
+	background: rgba(255,255,255,0.3);
+}
+
+input.form-control:hover::placeholder
+{
+	color:black;
+}
+
+input.form-control:focus
+{
+	background: rgba(255,255,255,0.5);
+	color: black;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
+.dropdown-menu
+{
+	background-color: rgba(0,0,0,0.1);
+	border: 1px solid white;
+	padding: 0;
+}
+
+.dropdown-item
+{
+	color: white;
+	transition: all 0.3s;
+}
+
+.dropdown-divider
+{
+	margin: 0;
+	padding: 0;
+}
+
+#menu.sticky
+{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+
+#menu.sticky nav
+{
+	margin: 0 10%;
+	background-color: rgba(52,58,64,0.85);
+}
+
+#carousel1
+{
+	
+}
+
+#myCarouselHome
+{
+	margin: 15px;
+    height: 285px;
+    overflow: hidden;
+	border: 1px solid aqua;
+}
+
+.carousel-indicators
+{
+	position: absolute;
+    top: 250px;
+}
+
+.carousel-control-prev span
+{
+	position: absolute;
+    top: 125px;
+    left: 35px;
+}
+
+.carousel-control-next span
+{
+	position: absolute;
+    top: 125px;
+    right: 35px;
+}
