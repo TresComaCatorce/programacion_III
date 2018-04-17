@@ -1,0 +1,20 @@
+/*
+    Enunciado ejercicio similar a parcial: 
+    El alumno va a tener:
+        -Nombre.
+        -Legajo.
+        -Foto. (Su nombre debera ser "nombre-legajo.extension")
+    
+    Se va a crear un archivo en "archivos/alumnos.txt" con los datos de los alumnos.
+
+    ALTA:   Por POST se recibe el nombre, legajo y la imagen. Se guardan los datos en el archivo "archivo/alumnos.txt".
+            Las imagenes se almacenan en el directorio "fotos".
+    
+    BAJA:   Crear el directorio "alumnosborrados" con un archivo "alumnos.txt" con los datos del alumno borrado.
+            Crear el directorio "fotosborradas" con los archivos de imagen que fueron borradas.
+
+    MODIFICACION:   Crear el directorio "alumnomodificado" con un archivo "alumnos.txt"
+                    Crear el directorio "fotoscambiadas" con las fotos viejas.
+
+    LISTADO:    Por metodo GET se puede devolver una tabla html mostrando el contenido de "archivos/alumnos.txt"
+*/
