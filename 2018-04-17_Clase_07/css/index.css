@@ -1,0 +1,34 @@
+body
+{
+    height: 3000px;
+}
+
+#page
+{
+    width: 100%;
+    height: 100%;
+}
+
+#pageContainer
+{
+    height: 100%;
+    widht: 100%;
+}
+
+#pageHeader
+{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+#pageContent
+{
+
+}
+
+#pageFooter
+{
+
+}
+
