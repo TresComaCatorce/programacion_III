@@ -1,0 +1,5 @@
+Frutilla - crema - 75 - 2
+Chocolate - crema - 98 - 3
+Durazno - agua - 65 - 7
+Frutilla - agua - 71 - 4
+coc - crema - 75 - 2
