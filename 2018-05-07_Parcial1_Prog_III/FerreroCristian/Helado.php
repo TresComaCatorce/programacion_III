@@ -71,9 +71,11 @@
             return $ListaLeida;
         }
 
-        //
+        //Consulta la lista de helados.
         public static function Consultar( $sabor, $tipo )
         {
+            $retorno = NULL;
+
             $hay = FALSE;
             $haySaborSolo = FALSE;
             $hayTipoSolo = FALSE;
@@ -82,12 +84,14 @@
             $listado = Helado::LeerArchivo();
 
             //Recorro el listado.
-            foreach( $listado as $helado )
+            foreach( $listado as $key=>$helado )
             {
                 //Comparo sabor y tipo.
                 if( strcmp( $sabor, $helado[0])==0 && strcmp( $tipo, $helado[1] )==0)
                 {
                     $hay = TRUE;
+                    $retorno = $helado;
+                    $retorno[] = $key;
                     break;
                 }
 
@@ -107,7 +111,7 @@
             //
             if( $hay )
             {
-                echo "Si Hay";
+                echo "Si hay ese sabor y gusto\r\n";
             }
             else
             {
@@ -128,8 +132,33 @@
                 }
             }
 
-            
+            return $retorno;
            
+        }
+
+        //Realiza una venta.
+        public static function Vender( $email, $sabor, $tipo, $cantidad )
+        {
+            $consulta = Helado::Consultar($sabor,$tipo);
+
+            if( $consulta!=NULL )
+            {
+                if( $consulta[3] >= $cantidad )
+                {
+                    //Guardo el archivo VENTAS.TXT
+                    $myFile = fopen("Venta.txt", "a");
+                    $stringAGuardar = $email.  " - "  .$sabor. " - " .$tipo. " - " .$cantidad. "\r\n";
+                    $cant = fwrite( $myFile, $stringAGuardar);
+                    //FIN Guardo el archivo VENTAS.TXT
+
+                    
+
+                }
+                else
+                {
+                    echo "No hay stock suficiente";
+                }
+            }
         }
     }
 ?>
