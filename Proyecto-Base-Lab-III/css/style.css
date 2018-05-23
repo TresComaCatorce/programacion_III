@@ -1,0 +1,38 @@
+body
+{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
+
+#page
+{
+    min-width: 420px;
+}
+
+#header
+{
+    height: 80px;
+    background-color: rgb(76, 0, 255);
+}
+
+#content
+{
+    margin: 0 10%;
+    height: 1200px;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+@media (max-width: 767px)
+{
+    #content
+    {
+        margin: 0 3%;
+    }
+}
+
+#footer
+{
+    height: 150px;
+    background-color: rgb(76, 0, 255)
+}
